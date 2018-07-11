@@ -1,0 +1,514 @@
+body,div,p,ul,li,input,table{
+    margin: 0;
+    padding: 0;
+    font: 14px 微软雅黑;
+}
+img,input{
+    border: 0 none;
+}
+input{
+    outline-style: none;
+}
+a{
+    color:  #fff;
+    text-decoration:none;
+}
+ul,li{
+    list-style: none;
+}
+
+body{
+    background-color: #415475;
+    /*height: 1130px;*/
+}
+
+/*head部分*/
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+
+.head{
+    height: 98px;
+    border-bottom: 2px solid #0084cc;
+}
+.head-cont{
+    height: 98px;
+    width: 1045px;
+    /*width: 85%;*/
+    margin: 0 auto;
+    /*padding: 0 55px;*/
+    
+}
+.logo{
+    width: 285px;
+    height: 70px;
+    margin-left: 55px;
+    margin-top: 14px;
+}
+.nav{
+    width: 380px;
+    height: 50px;
+    margin-top: 24px;
+    margin-right: 55px; 
+
+}
+.nav li{
+    float: left;
+}
+.nav li a{
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 15px;
+    text-decoration: none;
+}
+.nav li a:hover{
+    background: #0084cc;
+    color: #fff;
+}
+.nav li a:active, a:visited{
+    color: #fff;
+}
+
+/*内容部分*/
+.content{
+    width: 1045px;
+    /*width: 85%;*/
+    /*height: 1060px;*/
+    margin: 30px auto 0;
+    background-color: #fff;
+    padding: 30px 55px;
+}
+.content p, .container p{
+    color: #0084cc;
+    font: 18px 微软雅黑;
+}
+
+
+
+.input-group{
+    margin-top: 10px;
+}
+.btncolor {
+    color: #ffffff !important;
+    background-color: #0084cc !important;
+}
+#searchkeys {
+    border: 1px solid #0084cc;
+}
+
+/*.search{
+    width: 935px;
+    height: 40px;
+    margin-top: 10px;
+}*/
+/*.search-l{
+    width: 80px;
+    color: #fff;
+    height: 38px;
+    line-height: 40px;
+    background-color: #0084cc; 
+    text-align: center;
+}*/
+/*.search-r{
+    width: 855px;
+    height: 40px;
+           
+}*/
+/*.search-r input[type=text]{
+    width: 796px;
+    height: 34px;
+    line-height: 34px;
+    border-top: 2px solid #0084cc;
+    border-bottom: 2px solid #0084cc;
+    float: left;
+    color: #cccccc;
+    font-size: 14px;  
+    padding-left: 10px;
+}*/
+/*.search-r input[type=button]{
+    width: 49px;
+    height: 38px;
+    background: url(../images/search.png); 
+    vertical-align: middle;
+    float: left;
+}*/
+
+/*总体信息*/
+.bar{
+    height: 30px;
+    background-color: #eeeeee;
+    border: 2px solid #cccccc;
+    margin-top: 20px;
+}
+.bar-l, .bar-r{
+    height: 30px;
+    width: 430px;
+    line-height: 30px;
+    /*vertical-align: middle;*/
+    margin-left: 20px;
+    color: #0084cc; 
+    font-weight: 700;  
+}
+.bar a{
+    color: #0084cc; 
+}
+.bar a:hover{
+    text-decoration: underline;
+}
+/*区块图*/
+.d3layout{
+    width: 935px;
+    /*width: 100%;*/
+    margin: 10px 0;
+    height: 740px;
+    /*border: 1px solid #ccc;*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: space-around;
+
+    background: url(../images/blockchain12.png) no-repeat 80px 180px,
+                url(../images/blockchain12.png) no-repeat 874px 368px;
+    
+
+}
+.rowMiddle,.rowBottom{
+    height: 202px;
+    width: 935px;
+    /*border: 1px solid #aaa;*/
+    flex: auto; 
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    background-image: url(../images/blockchain11.png);
+    background-position: 145px center;
+    background-repeat: repeat-x;
+
+}
+.rowTop{
+    height: 202px;
+    width: 935px;
+    /*border: 1px solid #aaa;*/
+    flex: auto; 
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-image: url(../images/blockchain11.png);
+    background-position: 145px center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.block{
+    width: 145px;
+    height: 180px;
+    /*border: 1px solid #aaa;*/
+    background: url(../images/block6-72.png) left; 
+    flex: 0 1 auto;
+    position: relative;
+
+    /*flex布局*/
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    /*margin-right: 42px;*/
+    /*置于最底层，便于调整透明度*/
+    /*没这样写，因为这样做会让最底层的链条背景显示出来*/
+    /*z-index: 1;*/
+}
+.rowTop .top0{
+    background: url(../images/block5-72-top0.jpg) center;
+    margin-right: 50px;
+    
+}
+.rowTop .top1{
+    background: url(../images/block5-72-top1.jpg) center;
+    margin-right: 50px;
+}
+.rowTop .top2{
+    background: url(../images/block5-72-top2.jpg) center;
+    margin-right: 50px;
+}
+.rowTop .top3{
+    background: url(../images/block5-72-top3.jpg) center;
+    /*margin-right: 200px;*/
+}
+.rowTop .top4{
+    background: url(../images/block5-72-top4.jpg) center;
+}
+.bnew{
+    width: 0px;
+    height: 180px;
+    /*display: none;*/
+    margin-left: 200px;
+    opacity: 0;
+    background: url(../images/blockchainNew.png) no-repeat left;
+}
+/*给.bnewT类设置after和before两个伪类，再将这个类名添加给需要设置的元素*/
+.bnewT::after{
+    content: attr(data-content);
+    font-size: 12px;
+    display: block;
+    width: 36px; 
+    height: 15px;
+    line-height: 15px;
+    position: absolute;
+    top: 32%;
+    left: 80%;
+}
+
+.bnewT::before{
+    content: '';
+    display: block;
+    width: 9px; 
+    height: 9px;
+    background-image: url(../images/chainicon1.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 60%;
+    left: 81%;
+}
+/*第一二排每个block后面的小三角符号的处理,控制before*/
+.block-row .block:not(:first-child)::before{
+    content: '';
+    display: block;
+    width: 9px; 
+    height: 9px;
+    background-image: url(../images/chainicon1.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 60%;
+    left: -20%;
+}
+/*第一排显示每个block的产生时间，控制after伪类里的内容*/
+.rowTop .block:not(:first-child)::after{
+    content: attr(data-content);
+    font-size: 12px;
+    display: block;
+    width: 36px; 
+    height: 15px;
+    line-height: 15px;
+    position: absolute;
+    top: 30%;
+    left: -27%;
+}
+.bgnew{
+
+    position: absolute;
+    top: 47%;
+    left: -36%; 
+    opacity: ;
+}
+
+/*第二排显示每个block的产生时间，控制after伪类里的内容*/
+.rowMiddle .block:not(:first-child)::after{
+    content: attr(data-content);
+    font-size: 12px;
+    display: block;
+    width: 36px; 
+    height: 15px;
+    line-height: 15px;
+    position: absolute;
+    top: 30%;
+    left: -27%;
+}
+
+/*特殊的两个竖直方向的小三角,第二排第1个，第三排最后1个*/
+.rowMiddle .block:first-child::before{
+    content: '';
+    display: block;
+    width: 9px; 
+    height: 9px;
+    background-image: url(../images/chainicon1.png);
+    -webkit-transform:rotate(90deg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -20%;
+    left: 45%;
+}
+.rowBottom .block:last-child::before{
+    content: '';
+    display: block;
+    width: 9px; 
+    height: 9px;
+    background-image: url(../images/chainicon1.png);
+    -webkit-transform:rotate(270deg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -20%;
+    left: 70%;
+}
+/*第二排第1个显示block的产生时间，控制after伪类里的内容*/
+.rowMiddle .block:first-child::after{
+    content: attr(data-content);
+    font-size: 12px;
+    display: block;
+    width: 36px; 
+    height: 15px;
+    line-height: 15px;
+    position: absolute;
+    top: -20%;
+    left: 70%;
+}
+/*第三排最后1个显示block的产生时间，控制after伪类里的内容*/
+.rowBottom .block:last-child::after{
+    content: attr(data-content);
+    font-size: 12px;
+    display: block;
+    width: 36px; 
+    height: 15px;
+    line-height: 15px;
+    position: absolute;
+    top: -20%;
+    left: 30%;
+}
+
+/*创世块的信息*/
+.rowBottom>.block_0{
+    width: 703px;
+    height: 180px;
+    /*border: 1px solid #aaa;*/
+    background: url(../images/block0-72.jpg) left;  
+    flex: 0 1 auto;
+}
+
+.rowBottom>.block_0 p{
+    display: inline-block;
+    padding-top: 71px;
+    padding-left: 18px;
+    color:  #000000;
+    font: 20px 宋体;
+}
+.rowBottom>.block_0 h3{   
+    padding-left: 18px;
+    margin-top: 7px;
+    color:  #000000;
+    font: 35px 宋体;
+    font-weight: normal;
+}
+
+/*每个block上的Info，写在上头部*/
+.block .labelhead{ 
+    margin-top: 47px;   
+    width: 112px;
+    height: 83px;
+    /*border: 1px solid #000;*/
+    flex: none;
+   /* position: relative;
+    z-index: 100;*/
+}
+
+
+/*存在问题：*/
+/*1、缩放页面，字体不会跟着缩放*/
+
+/*block头部基本信息*/
+.labelhead a{
+    display: block;
+    max-width: 112px;
+    height: 83px;
+    padding-left: 5px;
+    padding-right: 10px;
+    
+}
+.labelhead a:hover{
+    text-decoration: underline; 
+    color: #000000;
+}
+.labelhead>a li.blockInfo{
+    display: block;
+    height: 12px;
+    line-height: 12px;
+    /*font-size: 4px;*/
+    font-size: 0.2vw;
+    margin-top: 0.4px;
+    margin-bottom: 0.5px;
+    color: #000000;
+
+    
+}
+.labelhead>a li.blockInfo-top{
+    display: block;
+    height: 18px;
+    line-height: 18px;
+    /*font-size: 12px;*/
+    font-size: 0.8vw;
+    color: #333333;
+}
+
+/*block的尾部用来画图*/
+.block .labelbottom{
+    height: 37px;
+    width: 132px;
+
+    flex: none;
+    /*position: relative;*/
+    /*z-index: 100;*/
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: space-between;
+
+}
+
+/*交易圆存放和内存占用条的大小*/
+.labelbottom>.trans-circle{
+    height: 28px;
+    width: 132px;
+
+    flex: none;
+}
+
+.labelbottom>.memory-bar{
+    height: 8px;
+    width: 132px;
+    
+    flex: none;
+    background-color: rgba(107,122,141,0.8);
+
+}
+/*设置内存条大小和文字*/
+.memory-bar .mb{
+    width: 8px;
+    height: 8px;
+    float: left;
+    background-color: #c3c3c5;
+
+}
+.memory-bar p{
+    display: block;
+    height: 8px;
+    line-height: 8px;
+    font: 3px 宋体;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+
+
+
+/*版本信息*/
+.footer {
+    padding: 2px;
+    text-align: center;
+}
+.footerpadding {
+    border-top: 1px solid #c5c5c5 !important;
+    margin-top: 100px !important;
+    margin-bottom: 50px !important;
+}

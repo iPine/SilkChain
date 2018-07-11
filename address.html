@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SilkChain Block</title>
+    
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css"> 
+   
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/list.css">
+    <style type="text/css">
+      
+
+    </style>
+    
+</head>
+<body>
+  
+<div class="head">
+    <div class="head-cont">
+       <div class="logo fl"><img src="images/logo.png"></div>
+       <div class="nav fr">
+           <ul>
+               <li><a href="index.html" target="_self">首页</a></li>
+               <li><a href="blocklist.html" target="_self">最新区块</a></li>
+               <li><a href="translist.html" target="_self">最近交易</a></li>
+               <li><a href="#">中文</a></li>
+               <li><a href="#">English</a></li>
+           </ul>
+       </div>  
+    </div>
+</div>
+<!-- 内容部分 -->
+<div class="content">
+    <p>欢迎使用Silubium官方区块浏览器</p>
+    <div class="input-group">
+        <span class="input-group-btn">
+            <label class="btn btncolor">&nbsp;&nbsp;SLB&nbsp;&nbsp;</label>
+        </span>
+        <input id="searchkeys" type="text" class="form-control" placeholder="区块号、区块哈希、交易编号、地址">
+        <span class="input-group-btn">
+            <button id="searchbtn" class="btn btncolor" type="button">
+                <span class="glyphicon glyphicon-search"></span>
+            </button>
+        </span>
+    </div>
+    <!-- 某个钱包地址信息部分 -->
+    <div class="container">   
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <div class="row addpadding">
+                <div class="col-xs-5 col-sm-3">钱包地址</div>
+                <div class="col-xs-7 col-sm-9"></div>
+            </div>
+        </div>
+        <div class="panel-body">
+            <div class="row addpadding">
+                <div class="col-xs-5 col-sm-3">交易次数</div>
+                <div class="col-xs-7 col-sm-9"></div>
+            </div>
+            <div class="row addpadding">
+                <div class="col-xs-5 col-sm-3">地址总额</div>
+                <a href="addrdetail.html">
+                    <div class="col-xs-7 col-sm-9">110SLB</div>
+                </a>
+            </div>
+            <div class="row addpadding">
+                <div class="col-xs-5 col-sm-3">可用余额</div>
+                <a href="#">
+                    <div class="col-xs-7 col-sm-9"></div>
+                </a>
+            </div>
+            <div class="row addpadding">
+                <div class="col-xs-5 col-sm-3">待确认余额</div>
+                <a href="#">
+                    <div class="col-xs-7 col-sm-9"></div>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+                 
+    <div class="panel panel-default">
+       <div class="panel-heading">
+           <div class="row addpadding">
+               <div class="col-xs-4 col-sm-6">交易编号</div>
+               <div class="col-xs-2 col-sm-1">状态</div>
+               <div class="col-xs-3 col-sm-2">金额</div>
+               <div class="col-xs-3 col-sm-3">时间</div>
+           </div>
+       </div>
+        <div class="panel-body">
+            <div class="row addpadding">
+                <div class="col-xs-4 col-sm-6 wordwrap">
+                    <a href="#">交易id</a>
+                </div>
+                <div class="col-xs-2 col-sm-1">
+                    <span style="color:blue;">转入</span>
+                    <!-- <span style="color:red;">转出</span> -->
+                </div>
+                <div class="col-xs-3 col-sm-2 wordwrap"></div>
+                <div class="col-xs-3 col-sm-3 wordwrap"></div>   
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+     <!-- 页脚部分 -->
+    <div class="footer footerpadding">
+      <div class="col-xs-12">SILUBIUM TEAM 2018.4.5 12:30 Ver2.4</div>
+    </div>
+</div>
+
+
+
+<!-- js文件加载开始 -->
+    <script type="text/javascript" src="lib/d3.min.js"></script>
+    <script type="text/javascript" src="lib/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="data/blocks.js"></script>
+    <script type="text/javascript" src="data/transactions.js"></script>
+    <script type="text/javascript" src="js/blockRender.js"></script>
+    <!-- <script type="text/javascript" src = "js/transInfoRender.js"></script> -->
+
+<script type="text/javascript">
+
+    // 1个a标签需要跳转到transinfo页面
+
+
+
+  // 调用transactions.js里的数据，展示某个交易地址的详细信息
+  
+  // var transData = transactionData();  
+  // console.log(transData[0].blockhash);
+ 
+  // var txid = 'fd11eb1bb4500c1cdbbbc8469b942d7f88b8e52042147b65e9fe4ce88dbef4a8';
+
+  // var txid = 'e7910a6c6aec231ac53a563eb6c585d63c193a80a94d5330b397982d61523e4b';
+
+  // var txid = '';
+
+  // txid = localStorage['id'];
+  // console.log(txid);
+
+  // addtransDetail(txid,transData);
+
+
+//点击所属块，跳转到相应block
+  // $(".col-xs-12.col-sm-8 a").click(function(){  
+  //   var bh = 0; 
+  //   var bhash = ""; 
+  //   bhash = $(this).text(); 
+  //   argsTrans(bh,bhash);
+  // });
+
+
+  searchB();
+
+</script>
+</body>
+</html>
