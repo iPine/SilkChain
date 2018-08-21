@@ -49,7 +49,7 @@ function addBlock(blockData,transData,up){
             if($(this).attr('class').indexOf('top4')!= -1){
                 $(this).parent('.bnew').addClass('timewait').attr('data-content',timeWait+'秒');
             }else{
-                $(this).addClass('timewait').attr('data-content',timeWait+'秒');
+                $(this).addClass('timewait').attr('data-content',(timeWait)+'秒');
             }
         }
         
@@ -64,7 +64,7 @@ function addBlock(blockData,transData,up){
 
         $(this).children(".labelbottom").children(".memory-bar").append('<div class="mb"></div>').addClass('mb');
         // 给每个memory-bar写入size信息
-        $(this).children(".labelbottom").children(".memory-bar").append('<p>'+blockData[54-i-up].size+'字节</p>');        
+        $(this).children(".labelbottom").children(".memory-bar").append('<p>'+(blockData[54-i-up].size/1000)+'kB</p>');        
           
     });
     // 为第一排每个block添加svg，并将类名设置为区块高度
@@ -86,7 +86,7 @@ function addBlock(blockData,transData,up){
         // CSS中的.attr只能应用在伪类中的content属性
         var timeWait = 0;
             timeWait = blockData[54+i-up].time - blockData[55+i-up].time;
-            $(this).addClass('timewait').attr('data-content',timeWait+'秒');
+            $(this).addClass('timewait').attr('data-content',(timeWait) +'秒');
 
 
         // 区块head部分信息显示
@@ -101,7 +101,7 @@ function addBlock(blockData,transData,up){
         $(this).children(".labelbottom").children(".memory-bar").append('<div class="mb"></div>').addClass('mb');
 
          // 给每个memory-bar写入size信息
-        $(this).children(".labelbottom").children(".memory-bar").append('<p>'+blockData[55+i-up].size+'字节</p>');
+        $(this).children(".labelbottom").children(".memory-bar").append('<p>'+(blockData[55+i-up].size/1000)+'kB</p>');
                 
     });
 
@@ -136,7 +136,7 @@ function circleRender(svgContainer,transData){
     var xRange = Math.random() * 132;
     var yRange = Math.random() * 28;
     // var rRange = Math.floor(Math.random()*2 + 2);
-    var rRange = 3;
+    var rRange = 9;
     // console.log(xRange);
 
     // 分组函数可以不用
@@ -174,7 +174,7 @@ function circleRender(svgContainer,transData){
                 r: function(dd,j){
                     // console.log(j);
                     // console.log(dd);
-                    return rRange*(dd['vins'] + dd['vouts'])
+                    return Math.sqrt(rRange*(dd['vins'] + dd['vouts']));
                 },
                 fill: '#5254a3',
                 class: function(dd,i){
