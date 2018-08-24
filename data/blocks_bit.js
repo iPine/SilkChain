@@ -1,5 +1,6 @@
 //缺失属性：证明哈希proofhash(已补上)、确认数confirmations、难度值difficulty(已补上)、标识flags
-
+//确认数一栏填bits;标识一栏填main_chain
+//交易费显示前加0.；版本号要转换成16进制后前面加0x;
 function blockData() {
       var data = [{
                   "hash": "0000000000000000001a34295aa5bd9bc0836d841a7522dc52f06fb1be1dded9",

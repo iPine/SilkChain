@@ -4,7 +4,7 @@ function addtransDetail(txid,transData){
     var tdata = [];
     // 先获取当前查询交易编号对应的数据记录
     for(var i=0; i<transData.length; i++){
-        if(txid == transData[i].txid)
+        if(txid == transData[i].hash)
             tdata.push(transData[i]);
     }
     console.log(tdata);
@@ -13,12 +13,12 @@ function addtransDetail(txid,transData){
     $('.panel-body .row .bh a').text(tdata[0].blockhash);
     //这里用.attr获取title属性内容或修改
     $('.panel-body .row .bh').attr('title','块高度：' + tdata[0].blockheight);
-    $('.panel-body .row .confirnum').text(tdata[0].confirmations);
-    $('.panel-body .row .version').text(tdata[0].version);
-    $('.panel-body .row .txfee').text(tdata[0].fee + ' SLB');
-    $('.panel-body .row .ins').text(tdata[0].vins);
-    $('.panel-body .row .outs').text(tdata[0].vouts);
-    $('.panel-body .row .time').text(unifyTime(tdata[0].txntime));
+    $('.panel-body .row .confirnum').text(tdata[0].weight);//用weight代替确认数
+    $('.panel-body .row .version').text(tdata[0].ver);
+    $('.panel-body .row .txfee').text(tdata[0].fee + ' BTC');//fee没有，默认为0
+    $('.panel-body .row .ins').text(tdata[0].vin_sz);
+    $('.panel-body .row .outs').text(tdata[0].vout_sz);
+    $('.panel-body .row .time').text(unifyTime(tdata[0].time));
    
     var addleft = '<div class="col-xs-8 wordwrap addressin"><a href="#"></a></div>' +
                   '<div class="col-xs-4 moneyin"></div>';

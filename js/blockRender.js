@@ -174,7 +174,7 @@ function circleRender(svgContainer,transData){
                 r: function(dd,j){
                     // console.log(j);
                     // console.log(dd);
-                    return Math.sqrt(rRange*(dd['vins'] + dd['vouts']));
+                    return Math.sqrt(rRange*(dd['vin_sz'] + dd['vout_sz']));
                 },
                 fill: '#5254a3',
                 class: function(dd,i){
@@ -187,7 +187,7 @@ function circleRender(svgContainer,transData){
             .call(d3.behavior.drag().on("drag", move))
             .append('title')
             .text(function(dd){
-                    return "输入输出地址数: " + (dd['vins'] + dd['vouts']);
+                    return "输入输出地址数: " + (dd['vin_sz'] + dd['vout_sz']);
                 });
 
     });

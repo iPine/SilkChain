@@ -1,6 +1,7 @@
+
 function transactionData(){
     var data = [
-    {"id":139370,"blockid":126412,"blockheight":532425,"blockhash":"0000000000000000001a34295aa5bd9bc0836d841a7522dc52f06fb1be1dded9","txid":"2f6cef5f777544a219705a87c7f12b8545a6b5dbab032f4f89db2ca2ebc389da","version":1,"time":1531900093,"age":1523235519000,"locktime":0,"vins":1,"vouts":2,"confirmations":3,"txntime":1523235509,"txnage":1523235509000,"fee":0E-8,"blocktxno":0,"txins":"03d3d701010c062f503253482f","txouts":"1RtUKxMRGBrz7Qt3YPZJb988PddKCNEFk","txmoney":0E-8},
+    {"id":139370,"blockid":126412,"blockheight":532425,"blockhash":"0000000000000000001a34295aa5bd9bc0836d841a7522dc52f06fb1be1dded9","hash":"49e9bd87466e894764613379e84a5e54878e81ad5d190c40bba2ab008c53c420","version":1,"time":1531900093,"age":1523235519000,"locktime":0,"vins":1,"vouts":2,"confirmations":3,"txntime":1523235509,"txnage":1523235509000,"fee":0E-8,"blocktxno":0,"txins":"03d3d701010c062f503253482f","txouts":"1RtUKxMRGBrz7Qt3YPZJb988PddKCNEFk","txmoney":0E-8},
     {"id":139370,"blockid":126412,"blockheight":532425,"blockhash":"0000000000000000001a34295aa5bd9bc0836d841a7522dc52f06fb1be1dded9","txid":"f902a7d06ae7895e570a8dd960882cafef0e1deaa2041ff1eb9c101c142efdb0","version":2,"time":1531899935,"age":1523235519000,"locktime":0,"vins":12,"vouts":1,"confirmations":3,"txntime":1523235509,"txnage":1523235509000,"fee":0E-8,"blocktxno":0,"txins":"03d3d701010c062f503253482f","txouts":"1RtUKxMRGBrz7Qt3YPZJb988PddKCNEFk","txmoney":0E-8},
     {"id":139370,"blockid":126412,"blockheight":532425,"blockhash":"0000000000000000001a34295aa5bd9bc0836d841a7522dc52f06fb1be1dded9","txid":"f902a7d06ae7895e570a8dd960882cafef0e1deaa2041ff1eb9c101c142efdb0","version":2,"time":1531899935,"age":1523235519000,"locktime":0,"vins":12,"vouts":1,"confirmations":3,"txntime":1523235509,"txnage":1523235509000,"fee":0E-8,"blocktxno":0,"txins":"03d3d701010c062f503253482f","txouts":"1RtUKxMRGBrz7Qt3YPZJb988PddKCNEFk","txmoney":0E-8},
     {"id":139370,"blockid":126412,"blockheight":532425,"blockhash":"0000000000000000001a34295aa5bd9bc0836d841a7522dc52f06fb1be1dded9","txid":"f902a7d06ae7895e570a8dd960882cafef0e1deaa2041ff1eb9c101c142efdb0","version":2,"time":1531899935,"age":1523235519000,"locktime":0,"vins":12,"vouts":1,"confirmations":3,"txntime":1523235509,"txnage":1523235509000,"fee":0E-8,"blocktxno":0,"txins":"03d3d701010c062f503253482f","txouts":"1RtUKxMRGBrz7Qt3YPZJb988PddKCNEFk","txmoney":0E-8},
@@ -85,9 +86,9 @@ function transactionData(){
     {"id":139354,"blockid":126309,"blockheight":532368,"blockhash":"00000000000000000010aae0a3f004850074b1610715a40e1619b29784b5a1da","txid":"d8fba5971ffa0c63a7573e53dbaab70d6759024407cb04d30c2ba81c2fc3faa4","version":1,"time":1523235101,"age":1523235101000,"locktime":0,"vins":1,"vouts":1,"confirmations":2,"txntime":1523232599,"txnage":1523235046000,"fee":0E-8,"blocktxno":0,"txins":"03d3d701010c062f503253482f","txouts":"Seon1Uneb4zP7bkZ5Yf4RLuX5bvS3MCYag","txmoney":0E-8},
     {"id":139354,"blockid":126308,"blockheight":532367,"blockhash":"0000000000000000001900f77520eba65f9ec28da972992cdc8ffd5e431ecdfe","txid":"ff5c980bcd5048fc849e4d1d22d6242ea59b67f797dbbac7269fd30b5141841b","version":1,"time":1523235101,"age":1523235101000,"locktime":0,"vins":1,"vouts":1,"confirmations":2,"txntime":1523232540,"txnage":1523235046000,"fee":0E-8,"blocktxno":0,"txins":"03d3d701010c062f503253482f","txouts":"SbkTQT4Fy5Qmmy1RUVipV3vgPoqjjm2gir","txmoney":0E-8},
     {"id":139354,"blockid":126306,"blockheight":532366,"blockhash":"00000000000000000033402569f8fbe07fb69eff31bd0ead148db0b955351f10","txid":"f68b946da7f4f2f993bad2e801b2b8b00e7cddcafdc383a0447eb1415b368919","version":1,"time":1523235101,"age":1523235101000,"locktime":0,"vins":1,"vouts":1,"confirmations":2,"txntime":1523232504,"txnage":1523235046000,"fee":0E-8,"blocktxno":0,"txins":"03d3d701010c062f503253482f","txouts":"SbkTQT4Fy5Qmmy1RUVipV3vgPoqjjm2gir","txmoney":0E-8},
-    
-    {"id":139354,"blockid":126304,"blockheight":532365,"blockhash":"000000000000000000317d0ec9a48c7debd7a4d5010c087850a47c5d9f605da9","txid":"df363150457fc073cc7978ce5d9e89a5239d2fda9d093e4eaf366bd288cde3b4","version":1,"time":1523235101,"age":1523235101000,"locktime":0,"vins":1,"vouts":1,"confirmations":2,"txntime":1523232351,"txnage":1523235046000,"fee":0E-8,"blocktxno":0,"txins":"03d3d701010c062f503253482f","txouts":"","txmoney":0E-8},
-   
+
+    {"id":139354,"blockid":126306,"blockheight":532365,"blockhash":"000000000000000000317d0ec9a48c7debd7a4d5010c087850a47c5d9f605da9","txid":"49e9bd87466e894764613379e84a5e54878e81ad5d190c40bba2ab008c53c420","version":1,"time":1531872335,"age":1523235101000,"locktime":0,"vins":1,"vouts":1,"confirmations":2,"txntime":1523232504,"txnage":1523235046000,"fee":0E-8,"blocktxno":0,"txins":"03d3d701010c062f503253482f","txouts":"SbkTQT4Fy5Qmmy1RUVipV3vgPoqjjm2gir","txmoney":0E-8},
+      
 
     ];
 
@@ -98,6 +99,10 @@ function transactionData(){
     return data;
 }
 
+
+
+//需要处理成的格式
+// {"blockheight":532365,"blockhash":"000000000000000000317d0ec9a48c7debd7a4d5010c087850a47c5d9f605da9","hash":"49e9bd87466e894764613379e84a5e54878e81ad5d190c40bba2ab008c53c420","ver":1,"time":1531872335,"locktime":0,"vin_sz":1,"vout_sz":2,"weight":896,"tx_index":360945330,"double_spend":false,"size":251,"fee":0E-8,"blocktxno":0,"inputs":"","txouts":["1EVzaFkkNNXq6RJh2oywwJMn8JPiq8ikDi",""],"txmoney":[1269105724,0E-8]},
 
 
 
