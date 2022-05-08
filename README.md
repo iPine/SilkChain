@@ -1,6 +1,6 @@
 # SilkChain
 ## A visual explorer of blockchain-based cryptocurrency transaction data
-## demo [演示](http://ipine.coding.me/silkChain/index.html)
+## demo [演示](https://ipine.cc/SilkChain/index.html)
 
 ### 备忘录
 
